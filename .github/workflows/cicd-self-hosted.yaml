@@ -8,10 +8,12 @@
  
 name: Java CI with Maven
 
-# Below is for when a new commit is pushed to the main branch
+# on:
+#   push:
+#     branches: [ "main" ]
+
 on:
-  push:
-    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   compile:
