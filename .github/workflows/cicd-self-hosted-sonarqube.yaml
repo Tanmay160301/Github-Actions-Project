@@ -4,8 +4,12 @@
 # This workflow uses actions that are not certified by GitHub.
 # They are provided by a third-party and are governed by
 # separate terms of service, privacy policy, and support
-# documentation. 
- 
+# documentation.
+
+# Notes:
+# "The SonarScanner runs as part of my GitHub Actions job on a self-hosted runner. It analyzes the source code and submits the analysis report to my SonarQube server, which processes the results and evaluates the Quality Gate."
+
+
 name: Java CI with Maven
 
 # on:
@@ -69,7 +73,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
 
-  
+
 
     # # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     # - name: Update dependency graph
